@@ -110,6 +110,11 @@ button {
   width: 1.7142857143rem;
   aspect-ratio: 1/1;
 }
+@media screen and (min-width: 1440px) {
+  .faq__header::after {
+    width: 1.5rem;
+  }
+}
 .faq__header[aria-expanded=true]::after {
   background-image: url("./../assets/images/icon-minus.svg");
 }

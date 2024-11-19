@@ -46,6 +46,10 @@
             display: block;
             width: px-to-rem(24);
             aspect-ratio: 1/1;
+
+            @include desktop {
+                width: px-to-rem(24, 16);
+            }
         }
 
         &[aria-expanded="true"] {
