@@ -26,16 +26,16 @@ class Accordion {
 
     this.headerEl.setAttribute("aria-expanded", `${this.open}`);
     if (this.open) {
-      this.panelEl.removeAttribute("aria-hidden");
+      this.panelEl.setAttribute("aria-hidden", "false");
     } else {
-      this.panelEl.setAttribute("aria-hidden", "");
+      this.panelEl.setAttribute("aria-hidden", "true");
     }
   }
 
   close() {
     this.open = false;
     this.headerEl.setAttribute("aria-expanded", "false");
-    this.panelEl.setAttribute("aria-hidden", "");
+    this.panelEl.setAttribute("aria-hidden", "true");
   }
 }
 

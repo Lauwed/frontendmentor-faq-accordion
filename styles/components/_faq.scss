@@ -83,7 +83,7 @@
 
         transition: all .6s ease;
 
-        &[aria-hidden] {
+        &[aria-hidden="true"] {
             max-height: 0;
             margin-bottom: 0;
         }
