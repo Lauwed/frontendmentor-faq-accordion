@@ -97,6 +97,7 @@ button {
   align-items: center;
   gap: 24px;
   width: 100%;
+  padding: 0;
   margin-bottom: 20px;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -156,6 +157,7 @@ button {
   .main {
     position: absolute;
     top: 200px;
+    max-width: 600px;
     padding: 40px;
   }
 }
