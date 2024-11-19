@@ -1,0 +1,48 @@
+.main {
+  position: relative;
+  z-index: 2;
+
+  background: $white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 24px;
+  border-radius: 8px;
+
+  box-shadow: 0 32px 56px 0 rgba(#500076, 0.1);
+
+  @include desktop {
+    position: absolute;
+    top: 200px;
+
+    padding: 40px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: px-to-rem(32);
+
+    @include desktop {
+      font-size: px-to-rem(56, 16);
+    }
+
+    &::before {
+      content: '';
+
+      display: inline-block;
+      background-image: url("./../assets/images/icon-star.svg");
+      background-size: contain;
+
+      margin-right: 24px;
+
+      width: 20px;
+      aspect-ratio: 1/1;
+
+      @include desktop {
+        width: 35px;
+      }
+    }
+  }
+}
